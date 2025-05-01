@@ -1,4 +1,8 @@
 import React from "react";
+import './Components.css';
+
+
+
 function CounterFunction() {
     const [count, setCount] = React.useState(0);
     const increment = () => {
@@ -10,8 +14,8 @@ function CounterFunction() {
     return(
         <div>
             <h1>Counter: {count}</h1>
-            <button onClick={increment}>Increment</button>
-            <button onClick={decrement}>Decrement</button>
+            <button class="button" onClick={increment}>Increment</button>
+            <button class="button" onClick={decrement}>Decrement</button>
         </div>
     )
 }

@@ -1,4 +1,5 @@
 import React,{Component} from "react";
+import './Components.css';
 class CounterClass extends Component{
     constructor(props){
         super(props);
@@ -16,8 +17,8 @@ class CounterClass extends Component{
         return(
             <div>
                 <h1>Counter: {this.state.count}</h1>
-                <button onClick={this.increment}>Increment</button>
-                <button onClick={this.decrement}>Decrement</button>
+                <button class="button" onClick={this.increment}>Increment</button>
+                <button class= "button" onClick={this.decrement}>Decrement</button>
             </div>
         )
     }
